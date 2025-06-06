@@ -1,0 +1,142 @@
+/* Black & White Theme */
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Login Card */
+.card-body {
+    background-color: #111;
+    border-radius: 15px;
+    padding: 40px;
+    max-width: 400px;
+    margin: auto;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2);
+}
+
+/* Title */
+.title h2 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Input Fields */
+.input-box {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-box i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px 10px 10px 35px;
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 5px;
+    outline: none;
+}
+
+.input-box input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Error Message */
+.error-message {
+    color: #ff5555;
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+/* Buttons */
+.btn-container {
+    text-align: center;
+}
+
+.btn-container button {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn-container button:hover {
+    background-color: #ccc;
+}
+
+/* Register Link */
+.register-link {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.register-link a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.register-link a span {
+    color: #aaa;
+}
+
+.register-link a:hover span {
+    color: #ccc;
+}
+
+/* Dark Mode Button */
+#dark-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+#dark-btn button {
+    background: #fff;
+    color: #000;
+    border: 1px solid #fff;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#dark-btn button:hover {
+    background: #ccc;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background-color: #fff;
+    color: #000;
+}
+
+.dark-mode .card-body {
+    background-color: #f0f0f0;
+}
+
+.dark-mode .input-box input {
+    border-color: #000;
+    color: #000;
+}
+
+.dark-mode .btn-container button {
+    background: #000;
+    color: #fff;
+}
+
+.dark-mode .register-link a {
+    color: #000;
+}

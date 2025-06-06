@@ -1,0 +1,64 @@
+body {
+    display: flex;
+    height: 100vh;
+    margin: 0;  
+    background:#f1f1f1 ;
+
+
+}
+ /* Sidebar Styling */
+ .sidebar {
+    width: 250px;
+    background-color: #34495e;
+    color: #34495e;
+    height: 100%;
+    padding-top: 20px;
+    position: fixed;
+}
+
+/* Container Width */
+
+
+
+        .main-content {
+            margin-left: 250px;
+            align-items: center;
+            padding: 20px;
+            flex: 1;
+        }
+
+        .scroll-container {
+            max-height: calc(120vh - 150px); /* Adjust height */
+            overflow-y: auto;
+            padding-right: 10px;
+            background: #f1f1f1; /* Light track */
+            color: #522; /* Adjust text color if needed */
+        }
+        
+            .scroll-container::-webkit-scrollbar {
+            width: 10px;
+        }
+        
+        .scroll-container::-webkit-scrollbar-track {
+            background: #f1f1f1; /* Light track */
+            border-radius: 4px;
+        }
+        
+        .scroll-container::-webkit-scrollbar-thumb {
+            background: #f1f1f1; /* Change to your theme color */
+            border-radius: 4px;
+            transition: background 0.3s ease-in-out;
+        }
+        
+        .scroll-container::-webkit-scrollbar-thumb:hover {
+            background: #f1f1f1; /* Slightly darker on hover */
+        }
+        
+        /* Firefox support */
+        .scroll-container {
+            scrollbar-width: thin;
+            scrollbar-color: #f1f1f1 #f1f1f1; /* Thumb color, Track color */
+        }
+        
+        /* Prevent unwanted page scrolling */
+        

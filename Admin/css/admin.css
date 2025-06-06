@@ -1,0 +1,33 @@
+body {
+    background-color: #fbfbfb;
+}
+
+@media (min-width: 991.98px) {
+    main {
+        padding-left: 240px;
+    }
+}
+
+
+/*log in page css*/
+
+body {
+    background-color: #f4f4f4;
+    font-family: 'Poppins', sans-serif;
+}
+
+.login-card {
+    max-width: 400px;
+    border-radius: 12px;
+    background: #fff;
+}
+
+.input-group-text {
+    background-color: #fff;
+    border-left: none;
+    cursor: pointer;
+}
+
+.form-control {
+    border-right: none;
+}
