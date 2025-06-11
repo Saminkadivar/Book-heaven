@@ -1,19 +1,14 @@
-FROM php:8.1-cli
-
-# Install dependencies (optional if you need zip, mysqli, etc.)
-RUN apt-get update && apt-get install -y \
-    unzip \
-    libzip-dev \
-    && docker-php-ext-install zip
+# Use official PHP image
+FROM php:8.2-cli
 
 # Set working directory
 WORKDIR /app
 
-# Copy everything
+# Copy everything into the container
 COPY . .
 
-# Expose port 8080
-EXPOSE 8080
+# Expose port 10000 (Render requirement)
+EXPOSE 10000
 
-# Start PHP built-in server
-CMD ["php", "-S", "0.0.0.0:8080", "-t", "public"]
+# Start the PHP server serving files from /app/public
+CMD ["php", "-S", "0.0.0.0:10000", "-t", "public"]
