@@ -1,8 +1,7 @@
 services:
   - type: web
-    name: php-website
+    name: book-heaven
     env: docker
     plan: free
-    buildCommand: ""
-    startCommand: php -S 0.0.0.0:10000 -t public
-    envVars: []
+    dockerfilePath: ./Dockerfile
+    autoDeploy: true
